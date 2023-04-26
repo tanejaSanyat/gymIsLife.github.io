@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st project</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            transition: all 0.2s;
+        }
+        body{
+            font-family: 'Noto Sans JP', sans-serif;
+            background-image: url(./content/pexels-scott-webb-28076.jpg) ;
+            background-size: cover;
+        }
+        .box1{
+            display: block;
+            /* border: 2px solid red; */
+            margin: 2px;
+            position: absolute;
+            left: 20px;
+        }
+
+        .box2{
+            display: block;
+            margin: 10px auto;
+            width: 33%;
+            /* border: 2px solid blue; */
+
+        }
+        .box3{
+            position: absolute;
+            right: 20px;
+            top:10px;
+
+        }
+        .navbar{
+            padding-inline-start: 0px;
+        }
+        .navbar li{
+            display: inline-block;
+            /* padding: 7.5px; */
+            font-size: 40px;
+        }
+        .navbar li a{
+            color: white;
+            padding: 7.5px;
+            font-size: 17px;
+        }
+        .navbar li a:hover{ 
+            display: inline-block;
+            text-decoration: underline;
+            color: grey;
+            /* pointer-events: stroke; */
+        }
+        .box1 img{
+            width: 100px;
+            /* margin-bottom: 10px; */
+        }
+        .box1 div{
+            color: white;
+            text-align: center;
+        }
+        .btn button{
+            /* display: block;
+            margin: auto; */
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin: 3px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        .btn button:hover{
+            font-family: 'Noto Sans JP', sans-serif;
+            /* display: inline-block; */
+            margin-top: 10px;
+            color: grey;
+            text-decoration: underline;
+        }
+        .container2{
+            border: 2px solid white;
+            border-radius: 30px;
+            color: white;
+            margin-top: 100px;
+            /* width: 400px; */
+        }
+        .container2 h3{
+            font-family: 'Noto Sans JP', sans-serif;
+            /* font-family: "Audiowide", sans-serif; */ 
+            text-align: center;
+        }
+        .container2 .form-grp input{
+            font-family: "Audiowide", sans-serif;
+            display: block;
+            margin: auto;
+            width: 300px;
+            text-align: center;
+        }
+        .container2 form .form-grp input{
+            margin-top: 8px;
+        }
+        .btn .specific{
+            font-family: "Audiowide", sans-serif;
+            display: block;
+            margin: 5px auto;
+            margin-top: 21px;
+        }
+        .container2 form .form-grp input .indi-grp{
+            display: inline;
+        }
+         /* /* .container2 div {
+            width: 300px;
+            margin: 10px;
+        } */
+        .container2 {
+            margin: 100px auto;
+            padding-bottom: 20px;
+            width: 70%;
+        } 
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <img src="https://w7.pngwing.com/pngs/779/1005/png-transparent-gym-logo.png" alt="">
+            <div>Gym is life</div>
+        </div>
+        <div class="box2">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="box3">
+            <div >
+                <button>Call Us Now</button>
+                <button>Email Us</button>
+            </div>
+        </div>
+        
+        <div class="container2">
+            <h3>Find your Gym!!!</h3>
+            <form action="noaction.php">
+                <div class="form-grp">
+                    <input type="text" name = "" placeholder="Enter Your Name">
+                    <input type="text" name = "" placeholder="Enter Your Age">
+                    <input type="text" name = "" placeholder="Enter Your Gender">
+                    <input type="text" name = "" placeholder="Enter Your locality">
+                    <input type="text" name = "" placeholder="Enter Your Email id">
+                    <input type="text" name = "" placeholder="Enter Your Phone Number">
+                    <div class= "btn">
+                        <button class = "specific">Button</button>
+                     </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
